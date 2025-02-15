@@ -1,0 +1,125 @@
+* {
+    /*comandos para redefinir os espaços do navegador*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .alex-brush-regular {
+    font-family: "Alex Brush", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-family: "Alex Brush", serif;
+    color: #472763;
+    margin: 30px 0 30px 0;
+}
+
+  body { 
+    background-image: url(./assets/bg_desktop_.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#onebox { 
+    background-image: url(./assets/bg_div.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 545px;
+    height: 780px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    max-width: 250px;
+    width: 100%;
+}
+
+#profile {
+    background-image: url(./assets/profile.png);
+    background-size: contain;
+    width: 110px;
+    height: 110px;
+    margin: auto;
+    align-items: center;
+}
+
+ul {
+    align-items: center;
+    justify-content: center;
+    list-style: none; /*retira os pontos do formato de lista*/
+    display: flex; /*faz ela ser um display flexivel*/
+    flex-direction: column; /*define que a lista vai ser em formato de colula*/
+    gap: 20px; /*espaçamento entre os itens da lista*/
+    /* padding: 24px 0; */
+    margin-bottom: 10px;
+}
+
+ul li input {
+    display: flex;
+    justify-content: center; /*alinha oq foi escrito meio da tela */
+    align-items: center; /*alinha oq foi escrito no meio da linha*/
+    padding: 16px 24px;
+    background: rgba(0, 0, 0, 0.05); /*quando mais perto do 0:preto, quando mais perto do 255:branco */
+    border: 1px solid rgba(255, 255, 255, 0.5); /*alpha:opacidade de 0 até 1*/
+    border-radius: 8px; /*para arrendondar as bordas*/
+    -webkit-backdrop-filter: blur(4px);
+    /*esse comando vai dar uma leve embaçada na box, mas é bom pesquisar no site caniuse.com para ver se tem restrição (por isso o comando webkit antes, para funcionar no safari)*/
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.5s;
+    text-align: center;
+}
+
+ul li input:hover {
+    background: rgba(0, 0, 0, 0.02) ;
+    border: 1.5px solid black;
+}
+
+.sitelinks a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    gap: 8px;
+} 
+
+.sitelinks img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.sitelinks { 
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.sitelinks p {
+    display: flex;
+    text-align: center;
+    font-size: 10px;
+    text-justify: distribute-all-lines;
+    justify-content: center;
+    font-weight: 500;
+}
+
+#list {
+margin: 50px;
+}
