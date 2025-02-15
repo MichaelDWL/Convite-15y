@@ -14,6 +14,9 @@
     font-family: "Alex Brush", serif;
     color: #472763;
     margin: 30px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
   body { 
@@ -53,35 +56,6 @@
     align-items: center;
 }
 
-ul {
-    list-style: none; /*retira os pontos do formato de lista*/
-    display: flex; /*faz ela ser um display flexivel*/
-    flex-direction: column; /*define que a lista vai ser em formato de colula*/
-    gap: 10px; /*espaçamento entre os itens da lista*/
-    /* padding: 24px 0; */
-    margin-bottom: 10px;
-}
-
-ul li p {
-    display: flex;
-    justify-content: center; /*alinha oq foi escrito meio da tela */
-    align-items: center; /*alinha oq foi escrito no meio da linha*/
-    padding: 16px 24px;
-    background: rgba(0, 0, 0, 0.05); /*quando mais perto do 0:preto, quando mais perto do 255:branco */
-    border: 1px solid rgba(255, 255, 255, 0.5); /*alpha:opacidade de 0 até 1*/
-    border-radius: 8px; /*para arrendondar as bordas*/
-    -webkit-backdrop-filter: blur(4px);
-    /*esse comando vai dar uma leve embaçada na box, mas é bom pesquisar no site caniuse.com para ver se tem restrição (por isso o comando webkit antes, para funcionar no safari)*/
-    text-decoration: none;
-    font-weight: 500;
-    transition: background 0.5s;
-}
-
-ul li p:hover {
-    background: rgba(0, 0, 0, 0.02) ;
-    border: 1.5px solid black;
-}
-
 .sitelinks a {
     display: flex;
     flex-direction: column;
@@ -114,3 +88,19 @@ ul li p:hover {
     justify-content: center;
     font-weight: 500;
 }
+
+.maps iframe { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    width: 400px; 
+    height: 240px; 
+    border: 30px;  
+    margin: auto;
+}
+
+.maps {
+    margin-bottom: 50px;
+}
+
