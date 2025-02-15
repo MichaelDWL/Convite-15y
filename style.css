@@ -14,17 +14,16 @@
     font-family: "Alex Brush", serif;
     color: #472763;
     margin: 30px 0 30px 0;
-
-
 }
+
   body { 
     background-image: url(./assets/bg_desktop_.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
     padding-top: 90px;
     padding-bottom: 90px;
+    height: 100vh;
 }
 
 #onebox { 
@@ -32,8 +31,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 488px;
-    height: 700px;
+    max-width: 545px;
+    height: 780px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -48,12 +47,11 @@
 
 #profile {
     background-image: url(./assets/profile.png);
-    background-size: cover;
+    background-size: contain;
     width: 110px;
     height: 110px;
     margin: auto;
     align-items: center;
-    
 }
 
 ul {
@@ -62,6 +60,7 @@ ul {
     flex-direction: column; /*define que a lista vai ser em formato de colula*/
     gap: 10px; /*espaçamento entre os itens da lista*/
     /* padding: 24px 0; */
+    margin-bottom: 10px;
 }
 
 ul li p {
@@ -84,27 +83,35 @@ ul li p:hover {
     border: 1.5px solid black;
 }
 
-#sitelinks a {
-    
+.sitelinks a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
+    align-items: center;
+    gap: 8px;
 } 
 
+.sitelinks img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
 
-#sitelinks { 
+.sitelinks { 
     display: flex;
     flex-direction: row;
     gap: 50px;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
     text-decoration: none;
 }
 
-#sitelinks p {
+.sitelinks p {
     display: flex;
     text-align: center;
     font-size: 10px;
     text-justify: distribute-all-lines;
     justify-content: center;
+    font-weight: 500;
 }
-
