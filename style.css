@@ -32,6 +32,9 @@
     padding-bottom: 50px;
     display: flex;
     min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #onebox { 
@@ -45,6 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 #content {
@@ -106,6 +110,12 @@ ul li p:hover {
     object-fit: contain;
 }
 
+.sitelinks a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
 .sitelinks { 
     display: flex;
     flex-direction: row;
@@ -126,9 +136,28 @@ ul li p:hover {
     font-family: "Concert One", serif;
 }
 
+
 @media (max-width:480px) { 
+    
     #onebox{ 
         margin: auto; 
         max-width: 350px;
 }
+
 }
+
+footer {
+     display: flex;
+     align-items: center;
+     justify-content:center;
+     font-family: "Concert One", serif;
+     font-weight: 500;
+    }
+
+    footer a {
+        color: #472763;
+        text-decoration: none;
+    }
+
+    
+    

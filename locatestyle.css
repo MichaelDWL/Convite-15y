@@ -19,6 +19,7 @@
     padding-bottom: 50px;
     display: flex;
     min-height: 100vh;
+    flex-direction: column;
   }
 
   h1 { 
@@ -54,6 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 #content {
@@ -82,6 +84,12 @@
     width: 30px;
     height: 30px;
     object-fit: contain;
+}
+
+.sitelinks a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: background 0.2s;
 }
 
 .sitelinks { 
@@ -131,3 +139,16 @@
         max-height: 300px;
     }
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-family: "Concert One", serif;
+    font-weight: 500;
+   }
+
+   footer a {
+       color: #472763;
+       text-decoration: none;
+   }
