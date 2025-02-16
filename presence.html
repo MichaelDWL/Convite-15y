@@ -4,7 +4,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -19,25 +23,39 @@
             
             <h1>Confirme sua Presença</h1>
 
+ <form action="#" method="get" onsubmit="enviarWpp()">
+    
     <div id="list">            
+        
         <ul>
             
             <div class="li_style">
                 <li>
-                    <input type="nome" class="li_style" placeholder="Digite seu nome">
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome">
                 </li>
             </div>
             
             <div class="li_style">
                 <li>
-                    <input type="text" name="number" class="li_style" placeholder="Digite seu numero">
+                    <input type="text" name="number" id="number" placeholder="Digite seu numero">
                 </li>
             </div>
+
+            <div class="button">
+                    
+            <button id=button type="submit">
+    
+                Enviar
+    
+            </button>
+    
+        </div>
 
         </ul>
 
     </div>    
-        
+
+    
         <div class="sitelinks">
             
             <a href="./index.html"> <img src="./assets/icon_present.png" alt="Presentes"> <p> Sugestão <br> de <br> presente </p> </a> 
@@ -48,10 +66,16 @@
             
         </div>
         
+
     </div>
     
 
+</form>
+
 </div>
 
+<script src="./wpp.js"></script>
+
 </body>
+
 </html>

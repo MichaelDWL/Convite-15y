@@ -4,6 +4,13 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  .concert-one-regular {
+    font-family: "Concert One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
   .alex-brush-regular {
     font-family: "Alex Brush", serif;
     font-weight: 400;
@@ -24,8 +31,10 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    display: flex;
 }
 
 #onebox { 
@@ -80,6 +89,7 @@ ul li input {
     font-weight: 500;
     transition: background 0.5s;
     text-align: center;
+    font-family: "Concert One", serif;
 }
 
 ul li input:hover {
@@ -114,12 +124,41 @@ ul li input:hover {
 .sitelinks p {
     display: flex;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     text-justify: distribute-all-lines;
     justify-content: center;
     font-weight: 500;
+    font-family: "Concert One", serif;
+}
+
+.sitelinks a:link, a:visited {
+color:#472763 ;
+
 }
 
 #list {
-margin: 50px;
+/* margin: 50px; */
+}
+
+#button {
+margin: 20px 0 20px 0;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+width: 75px;
+height: 35px;
+border-radius: 8px;
+border-color: #ECC873;
+font-weight: 400;
+font-family: "Concert One", serif;
+}
+
+@media (max-width:480px) { 
+    
+    #onebox{ 
+        margin: auto; 
+        max-width: 350px;   
+}
+
 }

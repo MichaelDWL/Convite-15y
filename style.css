@@ -10,6 +10,13 @@
     font-style: normal;
   }
 
+  .concert-one-regular {
+    font-family: "Concert One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
   h1 { 
     font-family: "Alex Brush", serif;
     color: #472763;
@@ -21,8 +28,10 @@
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    min-height: 100vh;
 }
 
 #onebox { 
@@ -75,6 +84,7 @@ ul li p {
     text-decoration: none;
     font-weight: 500;
     transition: background 0.5s;
+    font-family: "Concert One", serif;
 }
 
 ul li p:hover {
@@ -109,8 +119,16 @@ ul li p:hover {
 .sitelinks p {
     display: flex;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     text-justify: distribute-all-lines;
     justify-content: center;
     font-weight: 500;
+    font-family: "Concert One", serif;
+}
+
+@media (max-width:480px) { 
+    #onebox{ 
+        margin: auto; 
+        max-width: 350px;
+}
 }
