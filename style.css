@@ -146,6 +146,7 @@ ul li p:hover {
     #onebox{ 
         margin: auto; 
         max-width: 350px;
+        margin-bottom: 20px;
 }
 
 }
