@@ -19,6 +19,7 @@
     padding-bottom: 50px;
     display: flex;
     min-height: 100vh;
+    align-items: center;
     flex-direction: column;
   }
 
@@ -90,6 +91,10 @@
     background: rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     transition: background 0.2s;
+}
+
+.sitelinks a:link, a:visited {
+    color:#472763 ;
 }
 
 .sitelinks { 

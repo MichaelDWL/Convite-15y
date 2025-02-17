@@ -116,6 +116,10 @@ ul li p:hover {
     transition: background 0.2s;
 }
 
+.sitelinks a:link, a:visited {
+    color:#472763 ;
+}
+
 .sitelinks { 
     display: flex;
     flex-direction: row;
