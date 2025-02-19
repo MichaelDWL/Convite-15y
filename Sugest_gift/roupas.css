@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
   }
+  .alex-brush-regular {
+    font-family: "Alex Brush", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
   .concert-one-regular {
     font-family: "Concert One", serif;
@@ -11,16 +16,8 @@
     font-style: normal;
   }
   
-  .alex-brush-regular {
-    font-family: "Alex Brush", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
 
-  h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+  h1 { 
     font-family: "Alex Brush", serif;
     color: #472763;
     margin: 30px 0 30px 0;
@@ -33,18 +30,20 @@
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
-    min-height: 100vh;
     display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 #onebox { 
     background-image: url(./assets/bg_div.png);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 630px;
-    height: 900px;
+    max-width: 545px;
+    height: 780px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -55,12 +54,12 @@
 #content {
     max-width: 250px;
     width: 100%;
+    border: 2px black;
 }
 
 #profile {
     background-image: url(./assets/profile.png);
     background-size: contain;
-    background-repeat: no-repeat;
     width: 110px;
     height: 110px;
     margin: auto;
@@ -68,17 +67,15 @@
 }
 
 ul {
-    align-items: center;
-    justify-content: center;
     list-style: none; /*retira os pontos do formato de lista*/
     display: flex; /*faz ela ser um display flexivel*/
     flex-direction: column; /*define que a lista vai ser em formato de colula*/
-    gap: 20px; /*espaçamento entre os itens da lista*/
+    gap: 10px; /*espaçamento entre os itens da lista*/
     /* padding: 24px 0; */
     margin-bottom: 10px;
 }
 
-ul li input {
+ul li p {
     display: flex;
     justify-content: center; /*alinha oq foi escrito meio da tela */
     align-items: center; /*alinha oq foi escrito no meio da linha*/
@@ -91,26 +88,10 @@ ul li input {
     text-decoration: none;
     font-weight: 500;
     transition: background 0.5s;
-    text-align: center;
     font-family: "Concert One", serif;
 }
 
-ul li label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    font-family: "Alex Brush", serif;
-    font-weight: 600;
-    font-size: 30px;
-    color: #472763;
-    /* margin-bottom:; */
-}
-
-
-
-ul li input:hover {
+ul li p:hover {
     background: rgba(0, 0, 0, 0.02) ;
     border: 1.5px solid black;
 }
@@ -131,9 +112,12 @@ ul li input:hover {
 
 .sitelinks a:hover {
     background: rgba(0, 0, 0, 0.1);
-    padding: 8px;
     border-radius: 8px;
     transition: background 0.2s;
+}
+
+.sitelinks a:link, a:visited {
+    color:#472763 ;
 }
 
 .sitelinks { 
@@ -156,45 +140,29 @@ ul li input:hover {
     font-family: "Concert One", serif;
 }
 
-.sitelinks a:link, a:visited {
-color:#472763 ;
-}
-
-#button {
-margin: 20px 0 20px 0;
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-width: 75px;
-height: 35px;
-border-radius: 8px;
-border-color: #ECC873;
-font-weight: 400;
-font-family: "Concert One", serif;
-}
 
 @media (max-width:480px) { 
     
-    #onebox{
-        background-image: url(./assets/bg_mobile.png); 
+    #onebox{ 
         margin: auto; 
         max-width: 350px;
-        height: 100vh;
         margin-bottom: 20px;
-    }
+}
 
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    font-family: "Concert One", serif;
-    font-weight: 500;
-   }
+     display: flex;
+     align-items: center;
+     justify-content:center;
+     font-family: "Concert One", serif;
+     font-weight: 500;
+    }
 
-   footer a {
-       color: #472763;
-       text-decoration: none;
-   }
+    footer a {
+        color: #472763;
+        text-decoration: none;
+    }
+
+    
+    

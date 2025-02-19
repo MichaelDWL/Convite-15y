@@ -42,8 +42,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 545px;
-    height: 780px;
+    max-width: 630px;
+    height: 900px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -60,6 +60,7 @@
 #profile {
     background-image: url(./assets/profile.png);
     background-size: contain;
+    background-repeat: no-repeat;
     width: 110px;
     height: 110px;
     margin: auto;
@@ -68,32 +69,49 @@
 
 ul {
     list-style: none; /*retira os pontos do formato de lista*/
-    display: flex; /*faz ela ser um display flexivel*/
-    flex-direction: column; /*define que a lista vai ser em formato de colula*/
+    display: grid; /*faz ela ser um display flexivel*/
+    grid-template-columns: repeat(2, 1fr); 
     gap: 10px; /*espaçamento entre os itens da lista*/
-    /* padding: 24px 0; */
-    margin-bottom: 10px;
+    padding: 0;
+    gap: 30px;
 }
 
-ul li p {
+ul li img { 
+    width: 80px;
+    height: 80px;
     display: flex;
-    justify-content: center; /*alinha oq foi escrito meio da tela */
-    align-items: center; /*alinha oq foi escrito no meio da linha*/
-    padding: 16px 24px;
-    background: rgba(0, 0, 0, 0.05); /*quando mais perto do 0:preto, quando mais perto do 255:branco */
-    border: 1px solid rgba(255, 255, 255, 0.5); /*alpha:opacidade de 0 até 1*/
-    border-radius: 8px; /*para arrendondar as bordas*/
-    -webkit-backdrop-filter: blur(4px);
-    /*esse comando vai dar uma leve embaçada na box, mas é bom pesquisar no site caniuse.com para ver se tem restrição (por isso o comando webkit antes, para funcionar no safari)*/
+
+}
+
+ul li a { 
+    display: flex;
+    align-items: center;
+    flex-direction:column;
     text-decoration: none;
     font-weight: 500;
     transition: background 0.5s;
     font-family: "Concert One", serif;
+    color: #472763;
 }
 
-ul li p:hover {
-    background: rgba(0, 0, 0, 0.02) ;
-    border: 1.5px solid black;
+.sitelinks a:link, a:visited {
+    color:#472763 ;
+    }
+
+ul li a:hover {
+    background: rgba(225, 225, 225, 225.02) ;
+    border: 1.5px solid ghostwhite;
+    padding: 5px;
+    border-radius: 8px; 
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.barra { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0 30px 0;
+    
 }
 
 .sitelinks a {
@@ -112,6 +130,7 @@ ul li p:hover {
 
 .sitelinks a:hover {
     background: rgba(0, 0, 0, 0.1);
+    padding: 8px;
     border-radius: 8px;
     transition: background 0.2s;
 }
