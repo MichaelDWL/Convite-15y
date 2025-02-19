@@ -145,11 +145,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content:center;
-    font-family: "Concert One", serif;
+    font-family: "Alex brush", serif;
     font-weight: 500;
+    color: #292763;
+    font-size: 20px;
    }
 
    footer a {
-       color: #472763;
+       color: #292763;
        text-decoration: none;
    }

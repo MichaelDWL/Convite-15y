@@ -18,6 +18,9 @@
   
 
   h1 { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Alex Brush", serif;
     color: #472763;
     margin: 30px 0 30px 0;
@@ -42,8 +45,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 545px;
-    height: 780px;
+    max-width: 630px;
+    height: 900px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -64,6 +67,14 @@
     height: 110px;
     margin: auto;
     align-items: center;
+}
+
+.barra { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0 30px 0;
+    
 }
 
 ul {
@@ -93,7 +104,8 @@ ul li p {
 
 ul li p:hover {
     background: rgba(0, 0, 0, 0.02) ;
-    border: 1.5px solid black;
+    border: 1.5px solid ghostwhite;
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .sitelinks a {
@@ -112,6 +124,7 @@ ul li p:hover {
 
 .sitelinks a:hover {
     background: rgba(0, 0, 0, 0.1);
+    padding: 8px;
     border-radius: 8px;
     transition: background 0.2s;
 }
@@ -145,9 +158,11 @@ ul li p:hover {
     
     #onebox{ 
         margin: auto; 
-        max-width: 350px;
+        max-width: 450px;
         margin-bottom: 20px;
-}
+        background-image: url(./assets/bg_mobile.png);
+    }
+
 
 }
 
@@ -155,12 +170,14 @@ footer {
      display: flex;
      align-items: center;
      justify-content:center;
-     font-family: "Concert One", serif;
+     font-family: "Alex brush", serif;
      font-weight: 500;
+     color: #292763;
+     font-size: 20px;
     }
 
     footer a {
-        color: #472763;
+        color: #292763;
         text-decoration: none;
     }
 
