@@ -179,7 +179,7 @@ font-family: "Concert One", serif;
     #onebox{
         background-image: url(./assets/bg_mobile.png); 
         margin: auto; 
-        max-width: 350px;
+        max-width: 450px;
         height: 100vh;
         margin-bottom: 20px;
     }

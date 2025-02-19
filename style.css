@@ -164,9 +164,10 @@ ul li a:hover {
     
     #onebox{ 
         margin: auto; 
-        max-width: 350px;
+        max-width: 450px;
         margin-bottom: 20px;
-}
+        background-image: url(./assets/bg_mobile.png);
+    }
 
 }
 

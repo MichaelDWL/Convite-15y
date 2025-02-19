@@ -128,12 +128,13 @@
 
 
 @media (max-width:480px) { 
-    #onebox{ 
-        margin: 16px; 
-        max-width: 350px;
-        margin-bottom: 20px;
     
-}
+    #onebox{ 
+        margin: auto; 
+        max-width: 450px;
+        margin-bottom: 20px;
+        background-image: url(./assets/bg_mobile.png);
+    }
 
     .maps { 
         max-height: 300px;
