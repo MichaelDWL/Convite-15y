@@ -23,8 +23,9 @@
             
             <h1>Confirme sua Presença</h1>
 
- <form action="#" method="get" onsubmit="enviarWpp()">
-    
+<form action="email()" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="#">
     <div id="list">            
         
         <ul>
@@ -47,26 +48,27 @@
                     <input type="text" name="agregado_one" id="agregado_one" placeholder="Digite seu nome">
                 </li>
             </div>
-
+            
             <div class="li_style">
                 <li>
                     <input type="text" name="agregado_two" id="agregado_two" placeholder="Digite seu nome">
                 </li>
             </div>
-
+            
             <div class="button">
+                
+                <button id=button type="submit">
                     
-            <button id=button type="submit">
-    
-                Enviar
-    
-            </button>
-    
-        </div>
-
+                    Enviar
+                    
+                </button>
+                
+            </div>
+            
         </ul>
-
+        
     </div>    
+</form>
 
     
         <div class="sitelinks">
@@ -83,7 +85,6 @@
     </div>
     
 
-</form>
 
 </div>
 
