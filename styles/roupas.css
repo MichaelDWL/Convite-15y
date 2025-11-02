@@ -27,7 +27,7 @@
 }
 
   body { 
-    background-image: url(./assets/bg_desktop_.jpg);
+    background-image: url(../assets/bg_desktop_.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,7 +41,7 @@
 }
 
 #onebox { 
-    background-image: url(./assets/bg_div.png);
+    background-image: url(../assets/bg_div.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -61,7 +61,7 @@
 }
 
 #profile {
-    background-image: url(./assets/profile.png);
+    background-image: url(../assets/profile.png);
     background-size: contain;
     width: 110px;
     height: 110px;
@@ -160,7 +160,7 @@ ul li p:hover {
         margin: auto; 
         max-width: 450px;
         margin-bottom: 20px;
-        background-image: url(./assets/bg_mobile.png);
+        background-image: url(../assets/bg_mobile.png);
     }
 
 

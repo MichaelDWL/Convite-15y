@@ -27,7 +27,7 @@
 }
 
   body { 
-    background-image: url(./assets/bg_desktop_.jpg);
+    background-image: url(../assets/bg_desktop_.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,7 +39,7 @@
 }
 
 #onebox { 
-    background-image: url(./assets/bg_div.png);
+    background-image: url(../assets/bg_div.png);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -58,7 +58,7 @@
 }
 
 #profile {
-    background-image: url(./assets/profile.png);
+    background-image: url(../assets/profile.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 110px;
@@ -177,17 +177,14 @@ font-family: "Concert One", serif;
 @media (max-width:480px) { 
     
     #onebox{
-        background-image: url(./assets/bg_mobile.png); 
+        background-image: url(../assets/bg_mobile.png); 
         margin: auto; 
         max-width: 450px;
         /* height: 100vh; */
         margin-bottom: 20px;
     }
 
-
-
 }
-
 
 footer {
     display: flex;
