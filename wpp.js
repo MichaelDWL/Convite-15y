@@ -1,3 +1,5 @@
+//se caso quiser enviar por wpp
+
 function enviarWpp() {
     var name = document.getElementById("name").value;
     var number = document.getElementById("number").value;

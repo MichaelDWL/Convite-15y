@@ -163,20 +163,21 @@ ul li p:hover {
 
 }
 
-footer {
-     display: flex;
-     align-items: center;
-     justify-content:center;
-     font-family: "Alex brush", serif;
-     font-weight: 500;
-     color: #292763;
-     font-size: 20px;
-    }
 
-    footer a {
-        color: #292763;
-        text-decoration: none;
-    }
+footer {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-family:  "Momo Signature", cursive;
+    font-weight: 500;
+    color: #292763;
+    font-size: 10px;
+   }
+
+   footer a {
+       color: #292763;
+       text-decoration: none;
+   }
 
     
     
